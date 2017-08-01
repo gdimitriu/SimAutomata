@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\automates.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\automates.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About automates"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "automates Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_AUTOMATES_DIALOG DIALOGEX 0, 0, 143, 104
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "automates"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,23,50,14
+    PUSHBUTTON      "DFA",IDC_DFA,7,15,50,14
+    PUSHBUTTON      "PDA",IDC_PDA,7,34,50,14
+    PUSHBUTTON      "Client-Server",IDC_clientserver,7,55,50,14
+END
+
+IDD_DFA_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DFA"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,255,7,50,14
+    LTEXT           "States",IDC_STATIC,7,37,20,8
+    EDITTEXT        IDC_Q,48,33,79,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Input alphabet",IDC_STATIC,2,60,43,8
+    EDITTEXT        IDC_S,48,58,79,14,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Automata M=(Q,S,q0,f,F)",IDC_STATIC,120,13,88,12,WS_BORDER
+    LTEXT           "Final states",IDC_STATIC,7,86,35,8
+    EDITTEXT        IDC_F,48,83,79,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_file,57,179,139,14,ES_AUTOHSCROLL
+    LTEXT           "File",IDC_STATIC,7,183,24,8
+    LTEXT           "Input String",IDC_STATIC,7,129,34,8
+    EDITTEXT        IDC_str,56,128,181,14,ES_AUTOHSCROLL
+    LTEXT           "Analyzed string",IDC_STATIC,7,155,47,8
+    EDITTEXT        IDC_astr,56,154,181,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Load",IDC_load,254,179,50,14
+    PUSHBUTTON      "Init",IDC_init,254,155,50,14
+    PUSHBUTTON      "Next",IDC_next,253,129,50,14
+    LTEXT           "Current State",IDC_STATIC,141,85,39,8
+    EDITTEXT        IDC_cstate,183,83,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_q0,48,101,40,14,ES_AUTOHSCROLL
+    LTEXT           "Initial State",IDC_STATIC,7,102,33,8
+    LTEXT           "Old State",IDC_STATIC,140,60,29,8
+    EDITTEXT        IDC_ostate,182,58,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Element",IDC_STATIC,148,36,26,8
+    EDITTEXT        IDC_elem,182,33,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Help",IDC_Help,255,24,50,14
+    PUSHBUTTON      "Browse",IDC_BROWSEDFA,201,179,50,14
+END
+
+IDD_PDA_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PDA"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,253,151,50,14
+    CTEXT           "Push Down Automata (M=(Q,S,G,F,Q0,Z0)) Simulator",IDC_STATIC,83,7,160,9,SS_CENTERIMAGE | WS_BORDER
+    LTEXT           "Q=",IDC_STATIC,7,32,10,8
+    EDITTEXT        IDC_PDA_Q,17,30,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "S=",IDC_STATIC,7,46,9,8
+    EDITTEXT        IDC_PDA_S,17,44,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "G=",IDC_STATIC,7,60,10,8
+    EDITTEXT        IDC_PDA_G,17,58,88,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Q0=",IDC_STATIC,121,31,13,8
+    EDITTEXT        IDC_PDA_q0,134,29,88,14,ES_AUTOHSCROLL
+    LTEXT           "Z0=",IDC_STATIC,121,45,9,8
+    EDITTEXT        IDC_PDA_z0,134,43,88,14,ES_AUTOHSCROLL
+    LTEXT           "Stack=",IDC_STATIC,19,83,22,8
+    EDITTEXT        IDC_PDA_stack,49,80,264,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Input string=",IDC_STATIC,7,106,36,8
+    EDITTEXT        IDC_PDA_str,49,104,264,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Next",IDC_PDA_next,253,29,50,14
+    LTEXT           "Definition file",IDC_STATIC,7,176,39,8
+    EDITTEXT        IDC_PDA_file,51,173,140,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load",IDC_PDA_load,253,173,50,14
+    PUSHBUTTON      "Init",IDC_PDA_init,254,49,50,14
+    LTEXT           "Current State",IDC_STATIC,7,141,39,8
+    EDITTEXT        IDC_PDA_state,58,138,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Current Element",IDC_STATIC,109,146,48,8
+    EDITTEXT        IDC_PDA_elem,167,144,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "HELP",IDC_PDAHELP,253,7,50,14
+    EDITTEXT        IDC_PDA_know,50,122,263,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Known string",IDC_STATIC,7,124,40,8
+    LTEXT           "Old State",IDC_STATIC,7,157,29,8
+    EDITTEXT        IDC_PDA_ostate,58,154,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_BROWSEPDA,199,173,50,14
+END
+
+IDD_AUTOMATA_DIALOG DIALOGEX 0, 0, 317, 189
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "automata"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,237,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,30,50,14
+    EDITTEXT        IDC_Coada,49,159,248,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Queue",IDC_STATIC,15,161,21,8
+    EDITTEXT        IDC_StareC,87,87,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_StareA,87,133,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Previous State",IDC_STATIC,18,134,52,8
+    LTEXT           "Curent State",IDC_STATIC,25,89,44,8
+    PUSHBUTTON      "Advance",IDC_Avanseaza,141,30,50,14
+    EDITTEXT        IDC_Introducere,84,31,40,14,ES_AUTOHSCROLL
+    LTEXT           "Curent Element",IDC_STATIC,22,33,49,8
+    EDITTEXT        IDC_Iesire,60,59,239,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Output",IDC_STATIC,14,64,28,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "automates MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "automates"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "automates.EXE"
+            VALUE "ProductName", "automates Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_AUTOMATES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_AUTOMATA_DIALOG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_AUTOMATA_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About automates..."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\automates.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

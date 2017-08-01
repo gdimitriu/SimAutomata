@@ -1,0 +1,9 @@
+Q=q,p
+S=a,b
+G=z,A
+q0=q
+z0=z
+q,a,z=q,push(A)
+q,a,A=q,push(A)
+q,b,A=p,pop()
+p,b,A=p,pop()
